@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>HomeForm.ui.qml</file>
+        <file>AboutForm.ui.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>SettingsForm.ui.qml</file>
+        <file>media/logo.svg</file>
+        <file>media/timer.svg</file>
+        <file>media/runner.svg</file>
+        <file>media/reload.svg</file>
+        <file>media/runner_disabled.svg</file>
+        <file>media/runner_enabled.svg</file>
+    </qresource>
+</RCC>
