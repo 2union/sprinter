@@ -34,75 +34,45 @@ Page {
                     anchors.bottom: parent.bottom
                     z: 1000
                 }
-
-                Rectangle {
+                Issue {
                     id: first
+                    width: parent.width
+                    height: 60
+                    active: true
                     anchors.top: underline.bottom
-                    height: 60
-                    width: parent.width
-                    Rectangle {
-                        id: line
-                        height: parent.height
-                        width: 6
-                        color: "#d4aa00"
-                    }
-                    Image {
-                        id: runner
-                        width: 40
-                        height: 40
-                        source: "media/runner_enabled.svg"
-                        anchors.left: line.right
-                        anchors.verticalCenter: parent.verticalCenter
-                    }
-                    Button {
-                        anchors.right: parent.right
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.rightMargin: 10
-                        text: qsTr("Stop")
-                    }
-                    Label {
-                        id: task
-                        text: "URSITE-695"
-                        font.pixelSize: 16
-                        color: "blue"
-                        anchors.left: runner.right
-                        anchors.bottom: parent.verticalCenter
-                        anchors.leftMargin: 10
-                    }
-                    Label {
-                        text: "ЛК Логин на бэке"
-                        font.pixelSize: 16
-                        anchors.left: task.right
-                        anchors.bottom: parent.verticalCenter
-                        anchors.leftMargin: 20
-                    }
                 }
-                Rectangle {
+                Issue {
+                    odd: true
+                    width: parent.width
+                    height: 60
                     anchors.top: first.bottom
-                    height: 60
-                    width: parent.width
-                    color: "#e7e7e7"
-                    Rectangle {
-                        id: lineSecond
-                        height: parent.height
-                        width: 6
-                        color: "#b3b3b3"
-                    }
-                    Image {
-                        id: runnerSecond
-                        width: 40
-                        height: 40
-                        source: "media/runner_disabled.svg"
-                        anchors.left: lineSecond.right
-                        anchors.verticalCenter: parent.verticalCenter
-                    }
-                    Button {
-                        anchors.right: parent.right
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.rightMargin: 10
-                        text: qsTr("Run")
-                    }
                 }
+                //                Rectangle {
+                //                    anchors.top: first.bottom
+                //                    height: 60
+                //                    width: parent.width
+                //                    color: "#e7e7e7"
+                //                    Rectangle {
+                //                        id: lineSecond
+                //                        height: parent.height
+                //                        width: 6
+                //                        color: "#b3b3b3"
+                //                    }
+                //                    Image {
+                //                        id: runnerSecond
+                //                        width: 40
+                //                        height: 40
+                //                        source: "media/runner_disabled.svg"
+                //                        anchors.left: lineSecond.right
+                //                        anchors.verticalCenter: parent.verticalCenter
+                //                    }
+                //                    Button {
+                //                        anchors.right: parent.right
+                //                        anchors.verticalCenter: parent.verticalCenter
+                //                        anchors.rightMargin: 10
+                //                        text: qsTr("Run")
+                //                    }
+                //                }
             }
         }
         Tab {
