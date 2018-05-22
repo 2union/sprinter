@@ -55,6 +55,7 @@ Rectangle {
         anchors.top: parent.verticalCenter
         anchors.leftMargin: 10
         anchors.topMargin: 10
+        contentWidth: attr.width; contentHeight: attr.height
         clip: true
         ScrollBar.horizontal: ScrollBar {
             id: hbar
@@ -72,7 +73,7 @@ Rectangle {
         Row {
             id: attr
             height: 20
-            width: childrenRect.width
+            spacing: 20
 
             Repeater {
                 model: attributes
@@ -80,7 +81,6 @@ Rectangle {
                     font.pixelSize: 12
                     text: "<b>" + field + ":</b> " + description
                     color: "#161616"
-                    anchors.rightMargin: 20
                 }
             }
         }
