@@ -23,56 +23,38 @@ Page {
                     width: parent.width
                     color: "#cccccc"
                 }
-                ScrollBar {
-                    id: vbar
-                    hoverEnabled: true
-                    active: hovered || pressed
-                    orientation: Qt.Vertical
-                    size: frame.height / content.height
-                    anchors.top: parent.top
-                    anchors.right: parent.right
-                    anchors.bottom: parent.bottom
-                    z: 1000
-                }
-                Issue {
-                    id: first
+
+                //                ScrollBar {
+                //                    id: vbar
+                //                    hoverEnabled: true
+                //                    active: hovered || pressed
+                //                    orientation: Qt.Vertical
+                //                    size: frame.height / content.height
+                //                    anchors.top: parent.top
+                //                    anchors.right: parent.right
+                //                    anchors.bottom: parent.bottom
+                //                    z: 1000
+                //                }
+
+                //                Issue {
+                //                    id: first
+                //                    width: parent.width
+                //                    active: true
+                //                    issue: "URSITE-695"
+                //                    title: "ЛК Логин на бэке"
+                //                    anchors.top: underline.bottom
+                //                }
+                //                Issue {
+                //                    odd: true
+                //                    width: parent.width
+                //                    issue: "URSITE-695"
+                //                    title: "ЛК Логин на бэке"
+                //                    anchors.top: first.bottom
+                //  }
+                IssueList {
                     width: parent.width
-                    height: 60
-                    active: true
                     anchors.top: underline.bottom
                 }
-                Issue {
-                    odd: true
-                    width: parent.width
-                    height: 60
-                    anchors.top: first.bottom
-                }
-                //                Rectangle {
-                //                    anchors.top: first.bottom
-                //                    height: 60
-                //                    width: parent.width
-                //                    color: "#e7e7e7"
-                //                    Rectangle {
-                //                        id: lineSecond
-                //                        height: parent.height
-                //                        width: 6
-                //                        color: "#b3b3b3"
-                //                    }
-                //                    Image {
-                //                        id: runnerSecond
-                //                        width: 40
-                //                        height: 40
-                //                        source: "media/runner_disabled.svg"
-                //                        anchors.left: lineSecond.right
-                //                        anchors.verticalCenter: parent.verticalCenter
-                //                    }
-                //                    Button {
-                //                        anchors.right: parent.right
-                //                        anchors.verticalCenter: parent.verticalCenter
-                //                        anchors.rightMargin: 10
-                //                        text: qsTr("Run")
-                //                    }
-                //                }
             }
         }
         Tab {

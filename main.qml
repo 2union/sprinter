@@ -3,6 +3,8 @@ import QtQuick.Controls 2.4
 
 ApplicationWindow {
     id: window
+    minimumWidth: 1024
+    minimumHeight: 768
     visible: true
     width: 1024
     height: 768

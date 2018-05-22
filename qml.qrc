@@ -12,5 +12,6 @@
         <file>media/runner_disabled.svg</file>
         <file>media/runner_enabled.svg</file>
         <file>Issue.qml</file>
+        <file>IssueList.qml</file>
     </qresource>
 </RCC>
